@@ -11,4 +11,6 @@ Rails.application.routes.draw do
   get 'user/:id', to: 'users#show', as: 'user'
   # Defines the root path route ("/")
   # root "articles#index"
+  get '/notifications', to: 'notifications#index'
+
 end

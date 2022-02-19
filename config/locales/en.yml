@@ -33,4 +33,4 @@ en:
   hello: "Hello world"
   notifications:
     message_notification:
-      message: "You have a new Message from %{message.user.email}"
+      message: "You have a new Message from %{email} : %{body}  @ %{time}"

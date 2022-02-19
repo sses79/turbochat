@@ -18,7 +18,8 @@ class MessageNotification < Noticed::Base
   # Define helper methods to make rendering easier.
   #
   def message
-    t(".message")
+    message = params[:message]
+    t(".message", email: message.user.email, body: message.body, time: message.created_at)
   end
   #
   # def url
