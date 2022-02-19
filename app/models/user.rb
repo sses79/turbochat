@@ -7,6 +7,7 @@ class User < ApplicationRecord
   after_create_commit { broadcast_append_to "users" }
   after_update_commit { broadcast_update}
   has_many :messages
+  has_many :notifications, as: :recipient
   has_one_attached :avatar
 
   enum status: %i[offline away online]
