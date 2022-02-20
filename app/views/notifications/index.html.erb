@@ -1,2 +1,10 @@
-<h3>Notifications</h3>
-<%= render @notifications %>
+<div id="chatroom_container" class="min-w-full bg-white rounded-xl shadow-md">
+  <h4 class="mx-5 my-3 text-lg font-medium text-gray-900">Notifications</h4>
+  <% if @notifications.size == 0 %>
+    <div class="mx-5 my-2 font-medium text-gray-600">There are no recorders in the List.</div>
+  <% else %>
+    <ul class="mx-5 my-2 w-4/5 font-medium text-gray-900 bg-white rounded-lg border border-gray-200">
+      <%= render @notifications %>
+    </ul>
+  <% end %>
+</div>

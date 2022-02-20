@@ -12,7 +12,7 @@
         </div>
       </div>
     </div>
-    <h4 class="mx-5 my-3 text-lg text-gray-600"> Users </h4>
+    <h4 class="mx-5 my-3 text-lg font-medium text-gray-900">Users</h4>
     <%= turbo_stream_from "users" %>
     <ul id="users" class="overflow-auto h-[32rem]">
       <%= render @users %>
@@ -30,7 +30,7 @@
           <%= render 'layouts/new_message_form' %>
         </div>
       <% else %>
-        <div class="mt-2 ml-2">Choose one User start Chat</div>
+        <div class="mt-2 ml-2">Choose one user to start a chat</div>
       <% end %>
     </div>
   </div>
