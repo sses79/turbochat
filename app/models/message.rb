@@ -12,14 +12,6 @@ class Message < ApplicationRecord
     throw :abort unless is_participant
   end
 
-  def message_recipient
-    'offline'
-    # return unless room.is_private
-    # participant = Participant.where(room_id: self.room.id).where.not(user_id: self.user.id).first
-    # recipient = User.find(participant.user_id)
-    # throw :abort unless recipient
-  end
-
   private
 
   def notify_recipient
