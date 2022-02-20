@@ -29,13 +29,13 @@ class User < ApplicationRecord
   def status_to_css
     case status
     when 'online'
-      'bg-success'
+      's-bg-green'
     when 'away'
-      'bg-warning'
+      's-bg-amber'
     when 'offline'
-      'bg-dark'
+      's-bg-black'
     else
-      'bg-dark'
+      's-bg-black'
     end
   end
 

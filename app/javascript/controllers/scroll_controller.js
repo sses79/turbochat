@@ -3,7 +3,6 @@ import {Controller} from "@hotwired/stimulus"
 export default class extends Controller {
     /** On start */
     connect() {
-        console.log("Connected");
         const messages = document.getElementById("messages");
         messages.addEventListener("DOMNodeInserted", this.resetScroll);
         this.resetScroll(messages);
@@ -11,7 +10,7 @@ export default class extends Controller {
 
     /** On stop */
     disconnect() {
-        console.log("Disconnected");
+        // console.log("Disconnected");
     }
 
     /** Custom function */

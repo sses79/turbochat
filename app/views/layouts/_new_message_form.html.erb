@@ -1,7 +1,7 @@
-<div class="form_group msg-form">
-  <%= form_with(model: [@single_room, @message], remote: true, class: 'd-flex',
+<div class="my-5">
+  <%= form_with(model: [@single_room, @message], remote: true, class: 'flex flex-row justify-between',
                 data: { controller: "reset-form", action: "turbo:submit-end->reset-form#reset" }) do |f| %>
-    <%= f.text_field :body, id: 'chat-text', class: 'form-control msg-content', autocomplete: 'off' %>
-    <%= f.submit data: { disable_with: false }, class: 'btn btn-primary' %>
+    <%= f.text_field :body, required: 'required',id: 'chat-text', placeholder: 'Type a message...',class: 'mr-4 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline', autocomplete: 'off' %>
+    <%= f.submit "Send", data: { disable_with: false }, class: 'inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring focus:ring-gray-300 disabled:opacity-25 transition' %>
   <% end %>
 </div>

@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+
+@layer components {
+  .btn-primary {
+    @apply py-2 px-4 bg-blue-200;
+  }
+}
+
+*/
+
+.icon-container {
+    width: 32px;
+    height: 32px;
+    position: relative;
+}
+
+.status-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid grey;
+    bottom: 10px;
+    right: 10px;
+    position: absolute;
+}
+
+.s-bg-green {
+    background-color: green;
+}
+
+.s-bg-amber {
+    background-color: orange;
+}
+
+.s-bg-black {
+    background-color: black;
+}
+
+.msg-form {
+    width: 100%;
+}
+
+/*.msg-content {*/
+/*    width: 75%;*/
+/*    margin-right: 5px;*/
+/*}*/
+
+.message-box {
+    word-wrap: break-word;
+    width: fit-content;
+    max-width: 40%;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: black;
+    background-color: lightgrey;
+}
+
+#room_container {
+    height: calc(100vh - 120px);
+    margin-right: 0 !important;
+}
+
+#single_room {
+    height: calc(100vh - 200px);
+}
+
+#messages {
+    height: calc(100vh - 200px);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#chatroom_container {
+    height: calc(100vh - 90px);
+    margin-right: 0 !important;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}

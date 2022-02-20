@@ -75,3 +75,5 @@ end
 gem "devise", "~> 4.8"
 
 gem "noticed", "~> 1.5"
+
+gem "tailwindcss-rails", "~> 2.0"
